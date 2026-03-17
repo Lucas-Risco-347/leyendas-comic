@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>死 · LEGENDS · 観</title>
+    <title>死 · LEYENDAS · 観</title>
     <style>
         * {
             margin: 0;
@@ -297,7 +297,7 @@
             font-weight: bold;
         }
 
-        /* Grid principal - 3 columnas (eliminada la columna de sample pages) */
+        /* Grid principal - 3 columnas */
         .main-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -307,7 +307,7 @@
             margin-bottom: 15px;
         }
 
-        /* Columna 1 - Capítulo 2 */
+       /* Columna 1 - CAPÍTULO 3 (MORADO) */
         .col-1 {
             display: flex;
             flex-direction: column;
@@ -315,13 +315,13 @@
         }
 
         .chapter-box {
-            background: linear-gradient(145deg, #cc66ff, #aa33ff);
-            border: 8px ridge #ffcc00;
+            background: linear-gradient(145deg, #aa44ff, #5a2a8a);
+            border: 8px ridge #cc88ff;
             box-shadow: 
-                inset -4px -4px 0 #7722aa,
-                inset 4px 4px 0 #ffd9ff,
+                inset -4px -4px 0 #3a1a5a,
+                inset 4px 4px 0 #ddbbff,
                 10px 10px 0 #000000,
-                14px 14px 0 #330066;
+                14px 14px 0 #2a1542;
             padding: 15px;
             flex: 1;
             display: flex;
@@ -333,25 +333,24 @@
             font-size: 1.4rem;
             font-weight: bold;
             color: #ffff00;
-            background: #2a0044;
+            background: #2a1542;
             padding: 20px;
-            border: 4px inset #ff66ff;
+            border: 4px inset #b87aff;
             text-align: left;
             text-transform: uppercase;
             line-height: 1.8;
             width: 100%;
-            text-shadow: 2px 2px 0 #ff33ff;
+            text-shadow: 2px 2px 0 #6a2e8a;
         }
 
         .chapter-box strong {
             display: block;
             font-size: 1.8rem;
-            color: #ffb3ff;
-            text-shadow: 2px 2px 0 #00ffff;
+            color: #ffccff;
+            text-shadow: 2px 2px 0 #4a1d6a;
             margin-bottom: 10px;
         }
-
-        /* Columna 2 - Visitors y Envelope */
+        /* Columna 2 - VISITANTES y EN DESARROLLO */
         .col-2 {
             display: flex;
             flex-direction: column;
@@ -393,7 +392,7 @@
             font-weight: bold;
         }
 
-        /* Columna 3 - Contact y April */
+        /* Columna 3 - CONTACTO y MARZO */
         .col-3 {
             display: flex;
             flex-direction: column;
@@ -433,7 +432,7 @@
             border: 4px inset #ff66ff;
         }
 
-        /* Botón de reserva (Google Forms) */
+        /* Botón de reserva */
         .reserve-button-box {
             background: linear-gradient(145deg, #ff80ff, #cc33cc);
             border: 10px ridge #00ffff;
@@ -502,6 +501,11 @@
             cursor: pointer;
         }
 
+        .footer-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: inset -2px -2px 0 #6622aa, inset 2px 2px 0 #ffccff, 3px 3px 0 #000000;
+        }
+
         /* Modal (ya no se usa, pero lo dejamos por si acaso) */
         .modal {
             display: none;
@@ -550,16 +554,16 @@
     </div>
 
     <div class="container">
-        <h1 onclick="alert('LEGENDS · CAPÍTULO 2 · 3 PERSONAS · ¡APÓYANOS!')">LEGENDS</h1>
+        <h1 onclick="alert('LEYENDAS · CAPÍTULO 2 · 3 PERSONAS · ¡APÓYANOS!')">LEYENDAS</h1>
 
         <!-- Fila superior con carrusel de merch clickeable -->
         <div class="top-bar">
-            <div class="reserve-text">RESERVE THE COMIC</div>
+            <div class="reserve-text">RESERVA EL CÓMIC</div>
             <div class="close-box">
                 <div class="x">CIERRE</div>
-                <div class="time" id="countdown">00:15:10</div>
+                <div class="time" id="countdown">72:00:00</div>
             </div>
-            <!-- CARRUSEL DE MERCH (AHORA CLICKEABLE) -->
+            <!-- CARRUSEL DE MERCH (CLICKEABLE) -->
             <div class="merch-carousel">
                 <div class="merch-title">⚔️ MERCHANDISING ⚔️</div>
                 <div class="merch-track-container">
@@ -570,43 +574,43 @@
 
         <!-- Grid principal de 3 columnas -->
         <div class="main-grid">
-            <!-- Columna 1 - Capítulo 2 -->
+            <!-- Columna 1 - CAPÍTULO 3 (VERDE) -->
             <div class="col-1">
                 <div class="chapter-box">
                     <p>
-                        <strong>減 · CAPITULO 2 · 観</strong>
-                        APRIL 30, 2026<br>
-                        予約 · BOOK
+                        <strong>⚔️ CAPÍTULO 2⚔️</strong>
+                        MARZO 2026<br>
+                        予約 · RESERVA
                     </p>
                 </div>
             </div>
 
-            <!-- Columna 2 - Visitors y Envelope -->
+            <!-- Columna 2 - VISITANTES y EN DESARROLLO -->
             <div class="col-2">
                 <div class="counter-box">
-                    <div class="counter-label">来訪者 · VISITORS</div>
-                    <div class="counter-number" id="visit-counter">000001</div>
+                    <div class="counter-label">来訪者 · VISITANTES</div>
+                    <div class="counter-number" id="visit-counter">000000</div>
                 </div>
                 <div class="counter-box">
                     <div class="counter-label">ENVELOPE</div>
-                    <div class="counter-number" id="envelope">INBOX</div>
+                    <div class="counter-number" id="envelope">EN DESARROLLO</div>
                 </div>
             </div>
 
-            <!-- Columna 3 - Contact y April -->
+            <!-- Columna 3 - CONTACTO y MARZO -->
             <div class="col-3">
                 <div class="info-box">
-                    <div class="info-label">CONTACT</div>
+                    <div class="info-label">CONTACTO</div>
                     <div class="info-value" id="contact">@</div>
                 </div>
                 <div class="info-box">
-                    <div class="info-label">APRIL</div>
-                    <div class="info-value" id="april">30</div>
+                    <div class="info-label">MES</div>
+                    <div class="info-value" id="month">MARZO 2026</div>
                 </div>
             </div>
         </div>
 
-        <!-- Botón de reserva (Google Forms) -->
+        <!-- Botón de reserva -->
         <div class="reserve-button-box">
             <a href="https://forms.gle/UNEqjT11tXv9JDbf6" class="btn-reserve" target="_blank">
                 予約 · RESERVAR
@@ -615,15 +619,15 @@
 
         <!-- Footer -->
         <div class="footer">
-            <div class="footer-btn" onclick="alert('死 · ABOUT · Creado por 3 personas')">死 · ABOUT</div>
-            <div class="footer-btn" onclick="alert('減 · BOOK · Capítulo 2 · Abril 2026')">減 · BOOK</div>
+            <div class="footer-btn" onclick="alert('死 · SOBRE · Creado por 3 personas')">死 · SOBRE</div>
+            <div class="footer-btn" onclick="alert('減 · LIBRO · Capítulo 2 · Marzo 2026')">減 · LIBRO</div>
             <div class="footer-btn" onclick="alert('観 · FAQ · Sin preguntas, solo reserva')">観 · FAQ</div>
-            <div class="footer-btn" onclick="alert('視 · CONTACT · riscozamoralucas@gmail.com')">視 · CONTACT</div>
+            <div class="footer-btn" onclick="alert('視 · CONTACTO · riscozamoralucas@gmail.com')">視 · CONTACTO</div>
         </div>
     </div>
 
     <script>
-        // Modal (ya no se usa, pero lo mantenemos por si acaso)
+        // Modal (ya no se usa)
         const modal = document.getElementById('image-modal');
         const modalImg = document.getElementById('modal-image');
         const closeModal = document.getElementById('close-modal');
@@ -636,12 +640,17 @@
         closeModal.onclick = () => modal.classList.remove('active');
         modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('active'); };
 
-        // Valores estáticos
-        document.getElementById('countdown').textContent = '00:15:10';
-        document.getElementById('visit-counter').textContent = '000001';
-        document.getElementById('envelope').textContent = 'INBOX';
-        document.getElementById('contact').textContent = '@';
-        document.getElementById('april').textContent = '30';
+        // Valores estáticos actualizados
+        document.getElementById('countdown').textContent = '72:00:00';
+        document.getElementById('envelope').textContent = 'EN DESARROLLO';
+        document.getElementById('contact').textContent = '@riscozamoralucas';
+        document.getElementById('month').textContent = 'MARZO 2026';
+
+        // CONTADOR DE VISITANTES EN TIEMPO REAL
+        let visits = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 0;
+        visits++;
+        localStorage.setItem('visitCount', visits);
+        document.getElementById('visit-counter').textContent = visits.toString().padStart(6, '0');
 
         // CARRUSEL DE MERCH - CON ENLACES A LA TIENDA
         const merchData = [
